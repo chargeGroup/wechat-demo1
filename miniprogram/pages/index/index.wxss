@@ -21,6 +21,11 @@ page {
   transition: all 300ms ease;
 }
 
+.btn {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
 .userinfo {
   padding-left: 120rpx;
 }

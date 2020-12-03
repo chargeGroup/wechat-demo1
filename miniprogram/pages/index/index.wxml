@@ -15,6 +15,14 @@
     </view>
   </view>
 
+  <!-- 调用云函数 -->
+  <button
+    class="btn"
+    size="mini"
+    type="primary"
+    bindtap="handleRunCloundFn"
+  >调用云函数</button>
+
 
   <!-- 上传图片 -->
   <view class="uploader">

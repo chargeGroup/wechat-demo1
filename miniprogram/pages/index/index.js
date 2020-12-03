@@ -10,6 +10,20 @@ Page({
     requestResult: ''
   },
 
+  handleRunCloundFn: function() {
+    console.log('handleRunCloundFn');
+    wx.cloud.callFunction({
+      name: 'sum',
+      data: {
+        a: 1,
+        b: 2
+      },
+      success: (res) => {
+        console.log(res.result);
+      }
+    });
+  },
+
   onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({
